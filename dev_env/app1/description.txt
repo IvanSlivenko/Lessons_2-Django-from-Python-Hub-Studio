@@ -1,0 +1,50 @@
+https://youtu.be/w-ITLbRfhnA
+
+01 : 07 : 00
+
+--------------------------------------
+1.Встановлюємо віртуальне оточення
+
+D:\GitHub\Lessons_2-Django-from-Python-Hub-Studio\dev_env>python -m venv venv
+
+
+
+2.Активуємо віртуальне оточення
+
+D:\GitHub\Lessons_2-Django-from-Python-Hub-Studio\dev_env>venv\Scripts\activate
+
+
+
+
+3.Встановлюємо django 4.2.11
+
+(venv) D:\GitHub\Lessons_2-Django-from-Python-Hub-Studio\dev_env>pip install django==4.2.11
+
+
+
+4. django-admin
+
+(venv) D:\GitHub\Lessons_2-Django-from-Python-Hub-Studio\dev_env>django-admin
+
+
+5.Створення проекту
+(venv) D:\GitHub\Lessons_2-Django-from-Python-Hub-Studio\dev_env>django-admin startproject app
+
+
+6. Утиліта manage.py
+
+(venv) D:\GitHub\Lessons_2-Django-from-Python-Hub-Studio\dev_env\app1>python manage.py
+
+
+7. Запуск сервера django
+
+(venv) D:\GitHub\Lessons_2-Django-from-Python-Hub-Studio\dev_env\app1>python manage.py runserver
+
+8. Створення  сценарія debug  для django ->  запуск сервера ->       ctrl + F5
+
+9.Створюємо додаток main
+(venv) D:\GitHub\Lessons_2-Django-from-Python-Hub-Studio\dev_env\app1>python mange.py startapp main
+
+10. Реєструємо додаток main в налаштуваннях :  app-> settings.py -> INSTALLED_APPS
+
+
