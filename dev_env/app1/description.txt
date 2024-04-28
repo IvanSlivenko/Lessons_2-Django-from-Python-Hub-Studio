@@ -47,4 +47,15 @@ D:\GitHub\Lessons_2-Django-from-Python-Hub-Studio\dev_env>venv\Scripts\activate
 
 10. Реєструємо додаток main в налаштуваннях :  app-> settings.py -> INSTALLED_APPS
 
+11. Шаблонний тег
+
+{% load static %}  -  на початку HTML кода
+
+12. STATICFILES_DIRS - Уніфікація доступу до статичних файлів
+    
+    видаляємо імпорт 
+    
+    from django.conf.global_settings import STATICFILES_DIRS
+
+
 
