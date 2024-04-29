@@ -1,6 +1,6 @@
 https://youtu.be/w-ITLbRfhnA
 
-01 : 15 : 23
+02 : 32 : 28
 
 --------------------------------------
 1.Встановлюємо віртуальне оточення
@@ -56,6 +56,16 @@ D:\GitHub\Lessons_2-Django-from-Python-Hub-Studio\dev_env>venv\Scripts\activate
     видаляємо імпорт 
     
     from django.conf.global_settings import STATICFILES_DIRS
+
+    STATICFILES_DIRS = [
+        BASE_DIR / 'static'
+        ]
+
+13. block - base.html - винесення в окремий файл коду, що повторюється
+
+14. {% extends "main/base.html" %} - звертаємось до базоввої розмітки        
+
+15. url - <a class="navbar-brand" href="{% url "" %}">Home</a>
 
 
 

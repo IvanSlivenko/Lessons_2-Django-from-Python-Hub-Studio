@@ -6,19 +6,26 @@ from django.shortcuts import render
 def index(request):
     # return HttpResponse('Home page')
     context={
-        'title': 'Home',
-        'content':'Головна сторінка магазину - HOME',
-        'list':['fsrst','second'],
-        'dict':{'first':1},
-        'is_authenticated': False 
+        'title': 'Home  - Головна',
+        'content': 'Магазин меблів HOME',
     }
     return render(request, 'main/index.html', context)
 
 def about(request):
     # return HttpResponse('About page')
     context={
-        'title': 'Про нас',
-        'content':' Тут буде написано текст про нас'    
+        'title': 'Home - Про нас',
+        'content':'Про нас',
+        'text_on_page': 'Детальний  текст про нас', 
         }
     return render(request,'main/about.html', context)
+
+def test(request):
+    # return HttpResponse('About page')
+    context={
+        'title': 'test',
+        'content':'test',
+        'text_on_page': 'test test test', 
+        }
+    return render(request,'main/test.html', context)
 
