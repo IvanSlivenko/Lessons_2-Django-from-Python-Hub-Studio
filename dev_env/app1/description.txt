@@ -141,7 +141,10 @@ InteactiveConsole
 >>>
 -------------------------------------------------------
 
-26. objects
+26. pip install ipython
+
+27. objects
+
 
 
 
