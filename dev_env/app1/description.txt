@@ -1,6 +1,6 @@
 https://youtu.be/w-ITLbRfhnA
 
-03 : 28 : 04
+03 : 42 : 10
 
 --------------------------------------
 1.Встановлюємо віртуальне оточення
@@ -73,12 +73,53 @@ D:\GitHub\Lessons_2-Django-from-Python-Hub-Studio\dev_env>venv\Scripts\activate
 16. Terminal -> New Terminal -> manage.py ->  migrate ( застосувати всі міграції, що не були застосовані) - створюємо таблиці, що передбачені django за замовчуванням
     
 
-    makemigrations
+    makemigrations - створити міграції на основі модулів (поле "id" створюється автоматично)
 
 17. База данних ORM
 
 goods -> models.py
 
 створюємо таблиці
+
+18. Рефакторинг таблиць - 
+    1 - видаляємо файл бази данних.
+    2 - запускаємо сервер (ctrl + F5)
+
+    django сам створює міграції та пропоную нам створити з них таблиці (ті що в пакеті django)
+
+    3 - manage.py makemigrations - створюємо міграції
+    4 - manage.py migrate - створюємо таблиці на основі міграцій
+
+    
+19. Посилання на адмін панель 
+    
+    href="{% url "admin:index" %}"
+
+20. Створюємо користувача 
+
+    manage.py createsuperuser
+    name = root
+    email_adress = Null
+    password = root (символи не з'являються) - два рази
+    Підтверджуємо рівень складності пароля
+
+21. Реєструємо таблицю користувачів в admin.py
+
+from goods.models import Categories
+
+admin.site.register(Categories)
+
+22. Зміна мови користування адмінпанелі
+app-> settings-> 
+
+LANGUAGE_CODE = 'en-us'
+
+    змінюємо на
+
+LANGUAGE_CODE = 'uk'
+
+
+
+
 
 
