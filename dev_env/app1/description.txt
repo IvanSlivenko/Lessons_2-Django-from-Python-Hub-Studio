@@ -1,6 +1,6 @@
 https://youtu.be/w-ITLbRfhnA
 
-03 : 42 : 10
+04 : 05 : 30
 
 --------------------------------------
 1.Встановлюємо віртуальне оточення
@@ -118,6 +118,30 @@ LANGUAGE_CODE = 'en-us'
 
 LANGUAGE_CODE = 'uk'
 
+23.
+    apps.py
+    verbose_name = 'Товари'
+
+24. pip install Pillow    
+
+25. manage.py shell 
+
+InteactiveConsole
+------------------------------------------------------
+>>> from goods.models import Categories
+>>> x = Categories()  
+>>> x.name = 'Oфіс' 
+>>> x
+<Categories: Categories object (None)>
+>>> x.save()
+>>> x
+<Categories: Categories object (1)>
+>>> x.name
+'Oфіс'
+>>>
+-------------------------------------------------------
+
+26. objects
 
 
 
