@@ -26,7 +26,7 @@ def catalog(request):
             },
             {
                 "image": "deps/images/goods/double bed.jpg",
-                "name": "Двухспальне ліжко",
+                "name": "Двоспальне ліжко",
                 "description": "Ліжко двухспальная з надголовником ортопедична.",
                 "price": 670.00,
             },

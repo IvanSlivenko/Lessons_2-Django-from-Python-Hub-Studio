@@ -160,12 +160,24 @@ InteactiveConsole
 
     manage.py
 
-        dumpdata
-        loaddata
+        dumpdata - Резервна копія таблиці  бази данних
+        loaddata - Завантаження в таблицю бази данних з резервної копії 
+
+    (venv) D:\GitHub\Lessons_2-Django-from-Python-Hub-Studio\dev_env\app1>manage.py dumpdata goods.Categories > fixtures/goods/cats.json    
+
+    manage.py dumpdata goods.Products > fixtures/goods/prod.json 
+
+    manage.py makemigrations
+    manage.py migrate
+    manage.py createsuperuser
+    manage.py loaddata fixtures/goods/cats.json
+    manage.py loaddata fixtures/goods/prod.json
+
+
 
 ----------------------------------------------------
 
-04 : 32 : 11
+04 : 37 : 04
 
 ----------------------------------------------------
 

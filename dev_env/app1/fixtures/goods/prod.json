@@ -1,0 +1,170 @@
+[
+    {
+        "model": "goods.products",
+        "pk": 1,
+        "fields": {
+            "name": "Чайний столик та три стільця",
+            "slug": "chajnij-stolik-ta-tri-stilcya",
+            "description": "Комплект з трьох стільців та дизайнерский столик для вітальні��",
+            "image": "",
+            "price": "150.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2,
+        "fields": {
+            "name": "Чайный столик та два стільця",
+            "slug": "chajnyj-stolik-ta-dva-stilcya",
+            "description": "Набір -  стіл та два стільці в мінімалістичному  стилі",
+            "image": "",
+            "price": "93.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 3,
+        "fields": {
+            "name": "Двоспальне ліжко",
+            "slug": "dvuhspalne-lizhko",
+            "description": "Ліжко двухспальная з надголовником ортопедична",
+            "image": "",
+            "price": "670.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 6
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 4,
+        "fields": {
+            "name": "Кухонний стіл з раковиною",
+            "slug": "kuhonnij-stil-z-rakovinoyu",
+            "description": "Кухонний стіл з вбудованою раковиною та стільцями",
+            "image": "",
+            "price": "365.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 5,
+        "fields": {
+            "name": "Кухонний стіл з вбудованою раковиною",
+            "slug": "kuhonnij-stil-z-vbudovanoyu-rakovinoyu",
+            "description": "Кухонный стол з вбудованою плитою та раковиною",
+            "image": "",
+            "price": "430.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 6,
+        "fields": {
+            "name": "Кутовий диван для вітальні",
+            "slug": "kutovij-divan-dlya-vitalni",
+            "description": "Кутовий диван для затишної вітальні",
+            "image": "",
+            "price": "610.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 7
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 7,
+        "fields": {
+            "name": "Приліжковий столик",
+            "slug": "prilizhkovij-stolik",
+            "description": "Приліжковий столик з двома висувними ящиками",
+            "image": "",
+            "price": "550.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 6
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 8,
+        "fields": {
+            "name": "Диван звичайний",
+            "slug": "divan-zvichajnij",
+            "description": "Диван, він же софа звичайна",
+            "image": "",
+            "price": "1900.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 6
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 9,
+        "fields": {
+            "name": "Стілець офісний",
+            "slug": "stilec-ofisnij",
+            "description": "Зручний стілець офісний",
+            "image": "",
+            "price": "300.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 8
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 10,
+        "fields": {
+            "name": "Рослина",
+            "slug": "roslina",
+            "description": "Рослина для інтер'єру",
+            "image": "",
+            "price": "100.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 8
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 11,
+        "fields": {
+            "name": "Квітка стилізована",
+            "slug": "kvitka-stilizovana",
+            "description": "Дизайнерська квітка для створення затишку в інтер'єрі",
+            "image": "",
+            "price": "100.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 7
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 12,
+        "fields": {
+            "name": "Приліжковий столик дизайнерський",
+            "slug": "prilizhkovij-stolik-modefic",
+            "description": "Столик  для спальні",
+            "image": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 6
+        }
+    }
+]
