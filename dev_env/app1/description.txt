@@ -173,11 +173,59 @@ InteactiveConsole
     manage.py loaddata fixtures/goods/cats.json
     manage.py loaddata fixtures/goods/prod.json
 
+29. Change all ocurrences 
+
+30. pypi.org  - Збірка бібліотек для Python
+
+31. django debug toolbar
+
+    pip install django-debug-toolbar
+
+    https://django-debug-toolbar.readthedocs.io/.
+
+    debug_toolbar in INSTALLED_APPS
+
+    urlpatterns = [
+    
+    path("__debug__/", include("debug_toolbar.urls")),
+    
+]
+
+32. manage.py debugsqlshell
+
+    from goods.models import Products
+
+    Products.objects.all() - вибрати всі
+
+    Products.filter(id=2) - відбір
+
+    Products.objects.order_by('price') - сортування від меншого до більшого
+
+    Products.objects.order_by('-price') - сортування від більшого до меншого
+
+ 33. Field loocups
+
+    id__gt :  Більш чим
+    id__gte:  Більше або дорівнює
+    id__lt:   Менше ніж
+    id__lte:  Менше або дорівнює
+    id__sratswith: Регістр починається з
+
+
+Products.objects.filter(price__lt=300).order_by('price')
+
+
+
+
+
+
+
+
 
 
 ----------------------------------------------------
 
-04 : 37 : 04
+04 : 55 : 10
 
 ----------------------------------------------------
 
