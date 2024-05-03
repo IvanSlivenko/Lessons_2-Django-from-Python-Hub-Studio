@@ -211,8 +211,37 @@ InteactiveConsole
     id__lte:  Менше або дорівнює
     id__sratswith: Регістр починається з
 
+    AND and
 
+    OR
+
+
+
+
+-------------------------------------------------------------
+manage.py debugsqlshell
+from goods.models import Products
 Products.objects.filter(price__lt=300).order_by('price')
+Products.objects.filter(price__lt=300) & Products.objects.filter(price__gt=100)
+
+Products.objects.filter(price__lt=300).filter(price__gt=100).order_by("-price")
+
+
+Фільтр  по категорії
+Products.objects.filter(category__id=5)
+
+
+фільр по slug
+Products.objects.filter(category__slug="kuhnya").order_by("price")
+
+
+exists()
+
+alt + enter
+
+
+
+-------------------------------------------------------------
 
 
 
@@ -225,7 +254,7 @@ Products.objects.filter(price__lt=300).order_by('price')
 
 ----------------------------------------------------
 
-04 : 55 : 10
+05 : 29 : 27
 
 ----------------------------------------------------
 
