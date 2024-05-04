@@ -8,7 +8,7 @@ from goods.models import Categories
 def index(request):
     # return HttpResponse('Home page')
 
-    categories= Categories.objects.all()
+    # categories= Categories.objects.all()
 
     
 
@@ -17,7 +17,7 @@ def index(request):
     context={
         'title': 'Home  - Головна',
         'content': 'Магазин меблів HOME',
-        'categories': categories
+        # 'categories': categories
     }
     return render(request, 'main/index.html', context)
 
