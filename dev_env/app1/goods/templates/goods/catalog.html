@@ -10,10 +10,10 @@
             Фильтри
         </button>
 
-        <form action="" method="get" class="dropdown-menu bg-dark" data-bs-theme="dark">
+        <form action="{% url "catalog:index" slug_url  %}" method="get" class="dropdown-menu bg-dark" data-bs-theme="dark">
             <div class="form-check text-white mx-3">
                 <input class="form-check-input" type="checkbox" name="on_sale" id="flexCheckDefault" value="on">
-                <input type="hidden" name="q" value="request.GET.q">
+                {% comment %} <input type="hidden" name="q" value="request.GET.q"> {% endcomment %}
                 <label class="form-check-label" for="flexCheckDefault">
                     Товари в акції
                 </label>
@@ -42,12 +42,6 @@
                 <input class="form-check-input" type="radio" name="order_by" id="flexRadioDefault3" value="-price">
                 <label class="form-check-label" for="flexRadioDefault3">
                     Від дорогих до дешевих
-                </label>
-            </div>
-            <div class="form-check text-white mx-3">
-                <input class="form-check-input" type="radio" name="order_by" id="flexRadioDefault3" value="-price">
-                <label class="form-check-label" for="flexRadioDefault3">
-                    Мій фільтр
                 </label>
             </div>
             <button type="submit" class="btn btn-primary mx-3 mt-3">Застосувати</button>
