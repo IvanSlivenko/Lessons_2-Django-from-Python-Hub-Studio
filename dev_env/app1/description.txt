@@ -246,10 +246,55 @@ x = Products.objects.filter(Q(name__contains='диван') | Q(description__cont
 
 35. Postgrysql
 
+
+
+python -Xutf8 manage.py dumpdata goods.Products > fixtures/goods/products.json
+
+
+
+db = postgres
+user = postgres
+password = root
+
+
+user2 = home
+password = home
+
+
+
+
+cmd
+C:\Users\Vanya>"C:\Program Files\PostgreSQL\16\bin\psql.exe"
+
+
+SQL Shell (psql)
+
+
+
+phAdmon4
+
+db
+create db
+definition -> encoding -> utf-8
+
+
 psycopg
 
+pip install psycopg2
 
 
+manage.py makemigrations 
+
+manage.py migrate - створюємо таблиці в базі данних PostgreSQL
+manage.py createsuperuser
+user = root
+password = root
+
+
+manage.py loaddata fixtures/goods/categories.json
+
+
+manage.py loaddata fixtures/goods/products.json   
 
 -------------------------------------------------------------
 
@@ -264,7 +309,7 @@ psycopg
 
 ----------------------------------------------------
 
-08 : 11 : 44
+08 : 42 : 26
 
 ----------------------------------------------------
 
