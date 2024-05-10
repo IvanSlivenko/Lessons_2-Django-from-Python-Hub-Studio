@@ -296,20 +296,17 @@ manage.py loaddata fixtures/goods/categories.json
 
 manage.py loaddata fixtures/goods/products.json   
 
+35. Створюємо користувачів
+
+manage.py startapp users
+
+register in settings.py
+
 -------------------------------------------------------------
-
-
-
-
-
-
-
-
-
 
 ----------------------------------------------------
 
-08 : 56 : 34
+09 : 18 : 43
 
 ----------------------------------------------------
 
