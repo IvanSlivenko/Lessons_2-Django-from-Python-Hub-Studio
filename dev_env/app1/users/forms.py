@@ -1,6 +1,6 @@
 import email
 from django import forms
-from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
+from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, UserChangeForm
 
 from users.models import User
 
@@ -67,7 +67,7 @@ class UserRegistrationForm(UserCreationForm):
 #         widget=forms.TextInput(
 #             attrs={
 #                 "class":"form-control",
-#                 "placehjlder":"Введіть ваше ім'я",
+#                 "placeholder":"Введіть ваше ім'я",
 #             }
 #         )
 #     )  
@@ -76,7 +76,7 @@ class UserRegistrationForm(UserCreationForm):
 #         widget=forms.TextInput(
 #             attrs={
 #                 "class":"form-control",
-#                 "placehjlder":"Введіть ваше прізвище",
+#                 "placeholder":"Введіть ваше прізвище",
 #             }
 #         )
 #     )   
@@ -85,7 +85,7 @@ class UserRegistrationForm(UserCreationForm):
 #         widget=forms.TextInput(
 #             attrs={
 #                 "class":"form-control",
-#                 "placehjlder":"Введіть ваше ім'я користувача",
+#                 "placeholder":"Введіть ваше ім'я користувача",
 #             }
 #         )
 #     )
@@ -94,7 +94,7 @@ class UserRegistrationForm(UserCreationForm):
 #         widget=forms.EmailInput(
 #             attrs={
 #                 "class":"form-control",
-#                 "placehjlder":"Введіть вашу електронну пошту",
+#                 "placeholder":"Введіть вашу електронну пошту",
 #             }
 #         )
 #     )
@@ -103,7 +103,7 @@ class UserRegistrationForm(UserCreationForm):
 #         widget=forms.PasswordInput(
 #             attrs={
 #                 "class":"form-control",
-#                 "placehjlder":"Введіть ваш пароль",
+#                 "placeholder":"Введіть ваш пароль",
 #             }
 #         )
 #     )
@@ -112,8 +112,62 @@ class UserRegistrationForm(UserCreationForm):
 #         widget=forms.PasswordInput(
 #             attrs={
 #                 "class":"form-control",
-#                 "placehjlder":"Підтвердіть ваш пароль",
+#                 "placeholder":"Підтвердіть ваш пароль",
 #             }
 #         )
 #     )  
 # #----------------------------------------------------------------------------
+class ProfileForm(UserChangeForm):
+    class Meta:
+        model=User
+        fields=(
+            "image",
+            "first_name",
+            "last_name",
+            "username",
+            "email",
+        )
+    image = forms.ImageField(required=False)
+    first_name = forms.CharField()
+    last_name= forms.CharField()
+    username = forms.CharField()
+    email = forms.CharField()
+
+
+# #------------------------------------------------------------------------------        
+#     image=    forms.ImageField(
+#         widget=forms.FileInput(attrs={"class": "form-control mt-3"}),required=False
+#     )
+#     first_name = forms.CharField(
+#         widget = forms.TextInput(
+#             attrs={
+#             "class": "form-control",
+#             "placeholder": "Введіть ваше ім'я",
+#             }
+#         )
+#     )
+#     last_name = forms.CharField(
+#         widget = forms.TextInput(
+#             attrs={
+#             "class": "form-control",
+#             "placeholder": "Введіть ваше прізвище",
+#             }
+#         )
+#     )
+#     username = forms.CharField(
+#         widget = forms.TextInput(
+#             attrs={
+#             "class": "form-control",
+#             "placeholder": "Введіть ваше ім'я користувача",
+#             }
+#         )
+#     )
+#     email = forms.CharField(
+#         widget = forms.EmailField(
+#             attrs={
+#             "class": "form-control",
+#             "placeholder": "Введіть вашу почту",
+#             }
+#         )
+#     )
+#--------------------------------------------------------------------
