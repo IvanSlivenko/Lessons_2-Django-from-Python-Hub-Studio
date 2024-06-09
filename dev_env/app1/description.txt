@@ -43,7 +43,7 @@ D:\GitHub\Lessons_2-Django-from-Python-Hub-Studio\dev_env>venv\Scripts\activate
 8. Створення  сценарія debug  для django ->  запуск сервера ->       ctrl + F5
 
 9.Створюємо додаток main
-(venv) D:\GitHub\Lessons_2-Django-from-Python-Hub-Studio\dev_env\app1>python mange.py startapp main
+(venv) D:\GitHub\Lessons_2-Django-from-Python-Hub-Studio\dev_env\app1>python manage.py startapp main
 
 10. Реєструємо додаток main в налаштуваннях :  app-> settings.py -> INSTALLED_APPS
 
@@ -307,6 +307,13 @@ register in settings.py
 
 DROP TABLE auth_user CASCADE
 
+37.9.Створюємо додаток carts
+(venv) D:\GitHub\Lessons_2-Django-from-Python-Hub-Studio\dev_env\app1>python manage.py startapp carts
+
+реєструємо додаток carts
+app->settings.py->INSTALLED_APPS  додаємо 
+    'carts',
+
 
 -------------------------------------------------------------
 
@@ -320,5 +327,9 @@ DROP TABLE auth_user CASCADE
 Part 2
 https://youtu.be/km6tGZ3OHvQ
 
-00 : 00 : 00
+Запуск сервера django
+
+(venv) D:\GitHub\Lessons_2-Django-from-Python-Hub-Studio\dev_env\app1>python manage.py runserver
+
+16 : 39 : 00
 
